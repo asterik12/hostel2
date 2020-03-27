@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="\" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title> Alumni </title>
+    
+  <link rel="shortcut icon" href="images/aeclogo.png">
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="top-margin">
+     
+      <i class="fa fa-phone" aria-hidden="true" > <b>    +91</b>-9954000010</i>
+      <i class="fa fa-envelope" aria-hidden="true" style="padding-left: 10px;">  hostel2@aec.ac.in</i>
+      
+  </div>
+    <div class="header-box">
+      <img src="images/hostellogo.png" alt="" style="float:left;margin-right: 30px;height:100px;width:100px" >
+      <img src="images/aeclogo.png" alt="" style="float:right;height:100px;width:100px" >
+      
+    <div class="headerface"><b> HOSTEL NO #2</b></div>
+    <h5>Assam Engineering College<h5>
+    <h5><i>Jalukbari, Guwahati-13</i></h5>
+
+    <br>
+    <br>
+  </div>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html"><i class="fa fa-home" aria-hidden="true" > Home</i></a>
+    <div class="dropdown">
+      <button class="dropbtn"><i class="fa fa-info-circle" aria-hidden="true" > About Us</i>
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="abouthostel.html" class="textlines">About Hostel</a>
+        <a href="fromsuper.html" class="textlines">From Superintendent's Desk</a>
+        <a href="fromauditor.html" class="textlines">From The Auditor</a>
+        <a href="hostelmonitors.html" class="textlines">Hostel Monitors</a>
+        <a href="p-boarders.html" class="textlines">Present Boarders</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn"><i class="fa fa-building" aria-hidden="true" > Facilities</i>
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="h-building.html" class="textlines">See Hostel Building</a>
+        <a href="h-commonroom.html" class="textlines">Common Room</a>
+        <a href="mess.html" class="textlines">Mess</a>
+
+        <a href="volleyball.html" class="textlines">Volleyball Court</a>
+        <a href="badminton.html" class="textlines">Badminton Court</a>
+        <a href="garden.html" class="textlines">Garden</a>
+        <a href="gymnasium.html" class="textlines">Gymnasium</a>
+      </div>
+    </div>
+    
+    <a href="materials.html" ><i class="fa fa-book" aria-hidden="true" > Materials</i></a>
+    <div class="dropdown">
+      <button class="dropbtn"><i class="fa fa-camera" aria-hidden="true" > Gallery </i>
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="p-gallery.html" class="textlines">Photo Gallery</a>
+        <a href="v-gallery.html" class="textlines">Video Gallery</a>
+
+      </div>
+    </div>
+    <a href="contact.html"><i class="fa fa-phone" aria-hidden="true" > Contact Us </i></a>
+    <a href="alumni.html" class="active"><i class="fa fa-user" aria-hidden="true" > Alumni </i></a>
+    <a href="faq.html"><i class="fa fa-question" aria-hidden="true" > FAQs </i></a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"><div id="nav-icon1">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    </a>
+    
+<form>
+  <input type="text" style="float:right" name="search" placeholder="Search.."  >
+  
+</form>
+  </div>
+  
+  <script> 
+    $(document).ready(function(){
+      $('#nav-icon1').click(function(){
+        $(this).toggleClass('open');
+      });
+    });</script>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+  
+  </script>
+  
+
+   
+
+    <!--ALUMNI-->
+    <div class="row">
+     
+      <div class="col-13">
+        <div class="events"> 
+        <div class="events header"><h1>ALUMNI DETAILS</h1></div>
+          <div class="tab">
+            <button class="tablinks" onclick="opentab(event, 'tab1')" id="defaultTab">Alumni List (Batch Wise)</button>
+            <button class="tablinks" onclick="opentab(event, 'tab2')">Group Photo (Batch wise)</button>
+            <button class="tablinks" onclick="opentab(event, 'tab3')">Donations</button>
+          </div>
+         
+          <!-- present boarders-->
+          <div id="tab1" class="tabcontent">
+            <h2>Alumni List</h2>
+            <div class="text-content-slide">
+             <br>
+              <div class="input-container">
+                <i class="fa fa-search icon"></i>
+                <input type="text1" id="myInput" onkeyup="mySearch()" placeholder="Search by names, places ...." title="Type in a name">
+              </div>
+              <div id="mybtncontainer">
+                <button class="filter-btn blink" onclick="filterSelection('all')"> All</button>
+                <button class="filter-btn" onclick="filterSelection('1963')"> 1963</button>
+                <button class="filter-btn" onclick="filterSelection('1968')"> 1968</button>
+                <button class="filter-btn" onclick="filterSelection('1969')"> 1969</button>
+                <button class="filter-btn" onclick="filterSelection('1970')"> 1970</button>
+                <button class="filter-btn" onclick="filterSelection('1976')"> 1976</button>
+                <button class="filter-btn" onclick="filterSelection('1978')"> 1978</button>
+                <button class="filter-btn" onclick="filterSelection('1979')"> 1979</button>
+                <button class="filter-btn" onclick="filterSelection('1981')"> 1981</button>
+                <button class="filter-btn" onclick="filterSelection('1982')"> 1982</button>
+                <button class="filter-btn" onclick="filterSelection('1984')"> 1984</button>
+                <button class="filter-btn" onclick="filterSelection('1985')"> 1985</button>
+                <button class="filter-btn" onclick="filterSelection('1986')"> 1986</button>
+                <button class="filter-btn" onclick="filterSelection('1987')"> 1987</button>
+                <button class="filter-btn" onclick="filterSelection('1988')"> 1988</button>
+                <button class="filter-btn" onclick="filterSelection('1990')"> 1990</button>
+                <button class="filter-btn" onclick="filterSelection('1991')"> 1991</button>
+                <button class="filter-btn" onclick="filterSelection('1992')"> 1992</button>
+                <button class="filter-btn" onclick="filterSelection('1994')"> 1994</button>
+                <button class="filter-btn" onclick="filterSelection('1996')"> 1996</button>
+                <button class="filter-btn" onclick="filterSelection('1996')"> 1996</button>
+                <button class="filter-btn" onclick="filterSelection('1997')"> 1997</button>
+                <button class="filter-btn" onclick="filterSelection('1998')"> 1998</button>
+                <button class="filter-btn" onclick="filterSelection('1999')"> 1999</button>
+                <button class="filter-btn" onclick="filterSelection('2000')"> 2000</button>
+                <button class="filter-btn" onclick="filterSelection('2001')"> 2001</button>
+                <button class="filter-btn" onclick="filterSelection('2002')"> 2002</button>
+                <button class="filter-btn" onclick="filterSelection('2004')"> 2004</button>
+                <button class="filter-btn" onclick="filterSelection('2005')"> 2005</button>
+                <button class="filter-btn" onclick="filterSelection('2006')"> 2006</button>
+                <button class="filter-btn" onclick="filterSelection('2007')"> 2007</button>
+                <button class="filter-btn" onclick="filterSelection('2008')"> 2008</button>
+                <button class="filter-btn" onclick="filterSelection('2009')"> 2009</button>
+                <button class="filter-btn" onclick="filterSelection('2010')"> 2010</button>
+                <button class="filter-btn" onclick="filterSelection('2011')"> 2011</button>
+                <button class="filter-btn" onclick="filterSelection('2012')"> 2012</button>
+                <button class="filter-btn" onclick="filterSelection('2013')"> 2013</button>
+                <button class="filter-btn" onclick="filterSelection('2014')"> 2014</button>
+                <button class="filter-btn" onclick="filterSelection('2015')"> 2015</button>
+                <button class="filter-btn" onclick="filterSelection('2016')"> 2016</button>
+                <button class="filter-btn" onclick="filterSelection('2017')"> 2017</button>
+                <button class="filter-btn" onclick="filterSelection('2018')"> 2018</button>
+                <button class="filter-btn" onclick="filterSelection('2019')"> 2019</button>
+
+              </div>
+              
+             
+
+
+              
+              <table id="myTable" class="filter-container">
+
+                <!-- 2019-->
+                <tr class="filterDiv 2019" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2019/2019-shauvik.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>SHAUVIK PURKAYASTHA</p>
+                           <p><b>Email-id:</b> shauvik15-337@aec.ac.in</p>
+                           <p><b>Contact No :</b> 9859277599</p>
+                           <p><b>Present Address: </b>Dibang Hostel, IIT Guwahati </p>
+                           <p><b>Current Position/Job :</b>Junior Research Fellow at IIT Guwahati  </p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                           
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b>Computer Science and Engineering</p>
+                   <p><b>Batch: </b>2019</p>
+                  </td>
+                </tr>
+                <tr class="filterDiv 2019" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2019/2019-dibakar.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Dibakar Teron</p>
+                           <p><b>Email-id:</b> teron.dibakar@gmail.com</p>
+                           <p><b>Contact No :</b> 9126427974</p>
+                           <p><b>Present Address: </b>Council Colony,Diphu Karbi Anglong </p>
+                           <p><b>Current Position/Job :</b> </p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                           
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b>Electrical Engineering</p>
+                   <p><b>Batch: </b>2019</p>
+                  </td>
+                </tr>
+                <tr class="filterDiv 2019" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2019/2019-hrishikesh.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>HRISHIKESH BHATTACHARYYA</p>
+                           <p><b>Email-id:</b> hrishikeshbhatta8@gmail.com</p>
+                           <p><b>Contact No :</b> 8011297234/9101278820</p>
+                           <p><b>Present Address: </b>West Japarkuchi, Chowk Bazar, Nalbari, 781334</p>
+                           <p><b>Current Position/Job :</b>Marketing Manager (Luit Minerals)</p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                           
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b>Industrial and Production Engineering</p>
+                   <p><b>Batch: </b>2019</p>
+                  </td>
+                </tr>
+                <tr class="filterDiv 2019" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/profile.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Udiptaman Das</p>
+                           <p><b>Email-id:</b> udiptaman@gmail.com</p>
+                           <p><b>Contact No :</b> 9707010553</p>
+                           <p><b>Present Address: </b>Rajgarh, guwahati</p>
+                           <p><b>Current Position/Job :</b></p>
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b>Electrical Engineering</p>
+                   <p><b>Batch: </b>2019</p>
+                  </td>
+                </tr>
+                <tr class="filterDiv 2019" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2019/2019-simanta.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Simanta Dev</p>
+                           <p><b>Email-id:</b> simantadev2013@gmail.com</p>
+                           <p><b>Contact No :</b> 8402026827</p>
+                           <p><b>Present Address: </b>Guwahati</p>
+                           <p><b>Current Position/Job :</b> Businessman</p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                           
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b>Computer Science and Engineering</p>
+                   <p><b>Batch: </b>2019</p>
+                  </td>
+                </tr>
+                <tr class="filterDiv 2019" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2019/2019-shalu.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Shalu singh</p>
+                           <p><b>Email-id:</b> shalusinghkr@gmail.com</p>
+                           <p><b>Contact No :</b> 8011856814</p>
+                           <p><b>Present Address: </b>House no. - 15,sundarbari, jalukbari, Ghy, pin-781013</p>
+                           <p><b>Current Position/Job :</b></p>
+                        
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b>Mechanical Engineering</p>
+                   <p><b>Batch: </b>2019</p>
+                  </td>
+                </tr>
+                <tr class="filterDiv 2019" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2019/2019-hirak.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>HIRAK JYOTI SAIKIA</p>
+                           <p><b>Email-id:</b> hirakjsaikia57@gmail.com</p>
+                           <p><b>Contact No :</b> 8876259958</p>
+                           <p><b>Present Address: </b>Narengi</p>
+                           <p><b>Current Position/Job :</b></p>
+                        
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b>Mechanical Engineering</p>
+                   <p><b>Batch: </b>2019</p>
+                  </td>
+                </tr>
+                <tr class="filterDiv 2019" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2019/2019-mesk.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>MESAK  LALROFEL HMAR</p>
+                           <p><b>Email-id:</b> mesakaldrinhmar@gmail.com</p>
+                           <p><b>Contact No :</b> 6000472140</p>
+                           <p><b>Present Address: </b>Gandhi Basti, Ghy-3</p>
+                           <p><b>Current Position/Job :</b></p>
+                        
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b>Electronics and Telecommunication Engineering</p>
+                   <p><b>Batch: </b>2019</p>
+                  </td>
+                </tr>
+              
+              <!-- 2018 -->
+           
+                <tr class="filterDiv 2018" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2018/2018-deepak.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Deepak Kumar Prasad</p>
+                           <p><b>Email-id:</b> erdeepakkumar123@gmail.com</p>
+                           <p><b>Contact No :</b> 7002433645</p>
+                           <p><b>Present Address: </b>Golaghat</p>
+                           <p><b>Current Position/Job :</b>Business man</p>
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b>Civil Engineering</p>
+                   <p><b>Batch: </b>2018</p>
+                  </td>
+                </tr>
+                <tr class="filterDiv 2018" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2018/2018-priam.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>PRIYAM DEKA</p>
+                           <p><b>Email-id:</b> dekapriam@gmail.com</p>
+                           <p><b>Contact No :</b> 9365665977</p>
+                           <p><b>Present Address: </b>Guwahati</p>
+                           <p><b>Current Position/Job :</b>JRF, dept of Civil engineering, IIT G</p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                           
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b>Civil Engineering</p>
+                   <p><b>Batch: </b>2018</p>
+                  </td>
+                </tr>
+
+
+                <!-- 2017 -->
+                <tr class="filterDiv 2017" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2017/2017-abu.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Abu Wahid Rahman</p>
+                           <p><b>Email-id:</b> abuwrahman1348@gmail.com</p>
+                           <p><b>Contact No :</b> 7002884566</p>
+                           <p><b>Present Address: </b>Rupnagar,  Beltola,  Goalpara,  Assam,  Pin-783121</p>
+                           <p><b>Current Position/Job :</b>Guest Lecturer,  Civil Engineering Dept., Goalpara Polytechnic,  Goalpara,  Assam</p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                           
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b>Civil Engineering</p>
+                   <p><b>Batch: </b>2017</p>
+                  </td>
+                </tr>
+                <tr class="filterDiv 2017" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2017/2017-akash.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Akash Borah</p>
+                           <p><b>Email-id:</b> borahnibu@gmail.com</p>
+                           <p><b>Contact No :</b> 7002119636</p>
+                           <p><b>Present Address: </b>Vill-panigaon 
+                            PO/ps-panigaon 
+                            Dist-Lakhimpur 
+                            State-Assam
+                            Pin-787052</p>
+                           <p><b>Current Position/Job :</b>Assistant Engineer,PWRD</p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                           
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b>Civil Engineering</p>
+                   <p><b>Batch: </b>2017</p>
+                  </td>
+                </tr>
+                <tr class="filterDiv 2017" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2017/2017-julfi.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Julfi Alim Ahmed</p>
+                           <p><b>Email-id:</b> julfialim94@gmail.com</p>
+                           <p><b>Contact No :</b> 9957383167, 9435827786</p>
+                           <p><b>Present Address: </b>Hengrabari,guwahati</p>
+                           <p><b>Current Position/Job :</b>Production Officer, Bitchem asphalt tech lmd</p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                           
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b></p>
+                   <p><b>Batch: </b>2017</p>
+                  </td>
+                </tr>
+                <tr class="filterDiv 2017" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2017/2017-vikram.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Vikram Singh</p>
+                           <p><b>Email-id:</b> vikram13023@gmail.com</p>
+                           <p><b>Contact No :</b> 7002589542</p>
+                           <p><b>Present Address: </b>Guwahati</p>
+                           <p><b>Current Position/Job :</b>Director at Gate Boosted Educations</p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                           
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b>Civil Engineering</p>
+                   <p><b>Batch: </b>2017</p>
+                  </td>
+                </tr>
+                
+                <!-- 2016 -->
+                <tr class="filterDiv 2016" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2016/2016-dhritiman.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Dhritiman Talukdar</p>
+                           <p><b>Email-id:</b> dman.dhritiman@gmail.com</p>
+                           <p><b>Contact No :</b> 8638669215</p>
+                           <p><b>Present Address: </b>Vill&PO- Balikaria, dist-Nalbari,Assam, Pin-781341</p>
+                           <p><b>Current Position/Job :</b>Guest Lecturer at Baksa polytechnic</p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                           
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b></p>
+                   <p><b>Batch: </b>2016</p>
+                  </td>
+                </tr>
+                <tr class="filterDiv 2016" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2016/2016-atiqur.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Atiqur Rahman</p>
+                           <p><b>Email-id:</b> criminalmastermind666@gmail.com</p>
+                           <p><b>Contact No :</b> +91 7002139001</p>
+                           <p><b>Present Address: </b>North Sarania, Gandhibasti, P.O. Silpukhuri, Guwahati-781003</p>
+                           <p><b>Current Position/Job :</b>Pursuing M.E. in Geotechnical Engineering</p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                           
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b>Civil Engineering</p>
+                   <p><b>Batch: </b>2016</p>
+                  </td>
+                </tr>
+
+                <!-- 2015 -->
+                <tr class="filterDiv 2015" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2015/2015-ankur.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Ankur Chandra Boro</p>
+                           <p><b>Email-id:</b> boroankur6@gmail.com</p>
+                           <p><b>Contact No :</b> 7002470013/9707762577</p>
+                           <p><b>Present Address: </b>Rangia NT road ward no 5 near panchayat bhawan</p>
+                           <p><b>Current Position/Job :</b>Bussiness</p>
+                             
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b></p>
+                   <p><b>Batch: </b>2015</p>
+                  </td>
+                </tr>
+                <tr class="filterDiv 2015" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2015/2015-audit.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Audit Hakmusa</p>
+                           <p><b>Email-id:</b> audit69@gmail.com</p>
+                           <p><b>Contact No :</b> 8472965119</p>
+                           <p><b>Present Address: </b>O/o the CEO, Cachar Electrical Circle, Meherpur, Silchar - 788015</p>
+                           <p><b>Current Position/Job :</b>Assistant Manager (IT), APDCL</p>
+                             
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b></p>
+                   <p><b>Batch: </b>2015</p>
+                  </td>
+                </tr>
+                <tr class="filterDiv 2015" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2015/2015-eamin.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Eamin Ali</p>
+                           <p><b>Email-id:</b> eamin7070@gmail.com</p>
+                           <p><b>Contact No :</b> 8876687633</p>
+                           <p><b>Present Address: </b>Haflong</p>
+                           <p><b>Current Position/Job :</b>Assistant Engineer (PWD) </p>
+                             
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b></p>
+                   <p><b>Batch: </b>2015</p>
+                  </td>
+                </tr>
+                <tr class="filterDiv 2015" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2015/2015-kankan.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Kankan kalita</p>
+                           <p><b>Email-id:</b> kankankalita22@gmail.com</p>
+                           <p><b>Contact No :</b> 8399022795</p>
+                           <p><b>Present Address: </b>Vill & P.O.- Sandheli , Dist - Nalbari</p>
+                           <p><b>Current Position/Job :</b>Assistant Manager (IT), APDCL</p>
+                             
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b></p>
+                   <p><b>Batch: </b>2015</p>
+                  </td>
+                </tr>
+                <tr class="filterDiv 2015" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2015/2015-preetish.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Preetish Kakoty</p>
+                           <p><b>Email-id:</b> preet.kakoty@gmail.com</p>
+                           <p><b>Contact No :</b> 7782235490</p>
+                           <p><b>Present Address: </b>Vancouver, Canada</p>
+                           <p><b>Current Position/Job :</b>PhD student</p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                             
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b></p>
+                   <p><b>Batch: </b>2015</p>
+                  </td>
+                </tr>
+                <tr class="filterDiv 2015" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/profile.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Gopi Rao</p>
+                           <p><b>Email-id:</b> sgopirao@gmail.com</p>
+                           <p><b>Contact No :</b> 8008389998</p>
+                           <p><b>Present Address: </b>Hyderabad, India</p>
+                           <p><b>Current Position/Job :</b>Bharat Petroleum Corporation Limited (BPCL)</p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                             
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b></p>
+                   <p><b>Batch: </b>2015</p>
+                  </td>
+                </tr>
+                <!-- 2014 -->
+                <tr class="filterDiv 2014" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2014/2014-biswa.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Biswa Jyoti Lahkar</p>
+                           <p><b>Email-id:</b> lahkarb@gmail.com</p>
+                           <p><b>Contact No :</b> 9854525130</p>
+                           <p><b>Present Address: </b>Bongaigaon</p>
+                           <p><b>Current Position/Job :</b>Project Director, NHAI</p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                             
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b></p>
+                   <p><b>Batch: </b>2014</p>
+                  </td>
+                </tr>
+
+                <!-- 2013 -->
+                <tr class="filterDiv 2013" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2013/2013-ashim.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>ASHIM DEKA</p>
+                           <p><b>Email-id:</b> ashimdeka99@gmail.com</p>
+                           <p><b>Contact No :</b> 7002279284</p>
+                           <p><b>Present Address: </b>Duliajan, Assam</p>
+                           <p><b>Current Position/Job :</b>Assistant Engineer, PHE</p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                             
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b></p>
+                   <p><b>Batch: </b>2013</p>
+                  </td>
+                </tr>
+                <tr class="filterDiv 2013" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2013/2013-jitu.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Jitu Mani Sarma</p>
+                           <p><b>Email-id:</b> js3225@gmail.com</p>
+                           <p><b>Contact No :</b> 8876603285</p>
+                           <p><b>Present Address: </b>Bharalumukh,Guwahati</p>
+                           <p><b>Current Position/Job :</b>Administration dept.in ESIC (ministry of Labour)</p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                             
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b></p>
+                   <p><b>Batch: </b>2013</p>
+                  </td>
+                </tr>
+                <tr class="filterDiv 2013" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2013/2013-jyotiprakash.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Jyotiprakash Baishya </p>
+                           <p><b>Email-id:</b> jyoti.aec.2@gmail.com</p>
+                           <p><b>Contact No :</b> 8876878866</p>
+                           <p><b>Present Address: </b>Lokhra, Guwahati </p>
+                           <p><b>Current Position/Job :</b>Royal global University </p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                             
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b></p>
+                   <p><b>Batch: </b>2013</p>
+                  </td>
+                </tr>
+                <tr class="filterDiv 2013" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2013/2013-susrut.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Susrut Barman</p>
+                           <p><b>Email-id:</b> susrut21@gmail.com</p>
+                           <p><b>Contact No :</b> 7002592946</p>
+                           <p><b>Present Address: </b>ABRPL, Numaligarh, Golaghat, 785699</p>
+                           <p><b>Current Position/Job :</b>Engineer (Civil) </p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                             
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b></p>
+                   <p><b>Batch: </b>2013</p>
+                  </td>
+                </tr>
+
+                <!-- 2012 -->
+                <tr class="filterDiv 2012" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2012/2012-iftikar.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Md. Iftikar Hussain</p>
+                           <p><b>Email-id:</b> aeshussain@gmail.com</p>
+                           <p><b>Contact No :</b> 9706109499</p>
+                           <p><b>Present Address: </b>Gandhibasti, Ghy.</p>
+                           <p><b>Current Position/Job :</b>Assistant Engineer (Civil) </p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                             
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b></p>
+                   <p><b>Batch: </b>2012</p>
+                  </td>
+                </tr>
+                <tr class="filterDiv 2012" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2012/2012-surjit.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Surjit Kaman</p>
+                           <p><b>Email-id:</b> kamansurjit2@gmail.com</p>
+                           <p><b>Contact No :</b> 8876690733</p>
+                           <p><b>Present Address: </b>Advanced materials and sensors,CSIR-CSIO,Chandigarh 160030</p>
+                           <p><b>Current Position/Job :</b>Scientist</p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                             
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b></p>
+                   <p><b>Batch: </b>2012</p>
+                  </td>
+                </tr>
+                <tr class="filterDiv 2012" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/profile.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>RAJDEEP BARUAH</p>
+                           <p><b>Email-id:</b> baruah.rajdeep31@gmail.com</p>
+                           <p><b>Contact No :</b> 8467968321</p>
+                           <p><b>Present Address: </b>Gurgaon</p>
+                           <p><b>Current Position/Job :</b>Co-founder , Trekmonk</p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                             
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b></p>
+                   <p><b>Batch: </b>2012</p>
+                  </td>
+                </tr>
+
+                  <!-- 2011 -->
+
+                <tr class="filterDiv 2011" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2011/2011-navadeep.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Navadeep Changmai</p>
+                           <p><b>Email-id:</b> nava07296@gmail.com</p>
+                           <p><b>Contact No :</b> 8812801727</p>
+                           <p><b>Present Address: </b>Mangaldoi</p>
+                           <p><b>Current Position/Job :</b>Executive Magistrate (ACS)</p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                             
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b></p>
+                   <p><b>Batch: </b>2011</p>
+                  </td>
+                </tr>
+                <tr class="filterDiv 2011" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2011/2011-rahulsahni.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Rahul Sahni</p>
+                           <p><b>Email-id:</b> rahul_sahni0588@hotmail.com</p>
+                           <p><b>Contact No :</b> 7578886689, 7002041854</p>
+                           <p><b>Present Address: </b>Amingaon, IIT GUWAHATI</p>
+                           <p><b>Current Position/Job :</b>Design Innovation Center , D/o Design, IIT Guwahati</p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                             
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b></p>
+                   <p><b>Batch: </b>2011</p>
+                  </td>
+                </tr>
+
+               <!-- 2010 -->
+               <tr class="filterDiv 2010" >
+                <td style="width:60%">
+                    <div class="textbox-container">
+                         <img src="images/alumni/2010/2010-ratuln-nath.jpg" class="icon-box" alt=""> 
+                         <div class="details-box">
+                         <p><b>Name:</b>Ratul Nath</p>
+                         <p><b>Email-id:</b> ratul107@gmail.com</p>
+                         <p><b>Contact No :</b> 8653182519</p>
+                         <p><b>Present Address: </b>Siliguri</p>
+                         <p><b>Current Position/Job :</b>Numaligarh Refinery Ltd.(NRL)</p>
+                         <a href="#" class="fa fa-linkedin" target="blank"></a>
+                           
+                         </div>
+                         
+                      </div>
+                </td>
+                <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                  <p> <b>Degree: </b> B.E</p>
+                 <p> <b>Branch: </b></p>
+                 <p><b>Batch: </b>2010</p>
+                </td>
+              </tr> 
+              <tr class="filterDiv 2010" >
+                <td style="width:60%">
+                    <div class="textbox-container">
+                         <img src="images/alumni/profile.jpg" class="icon-box" alt=""> 
+                         <div class="details-box">
+                         <p><b>Name:</b>Parixit Bhattacharjee</p>
+                         <p><b>Email-id:</b> parixit16@gmail.com</p>
+                         <p><b>Contact No :</b> 9619894474</p>
+                         <p><b>Present Address: </b>House 14, Chandangiri Path Barbari, Ghy 36</p>
+                         <p><b>Current Position/Job :</b>Co-founder Fat Belly Group of Restaurants</p>
+                         <a href="#" class="fa fa-linkedin" target="blank"></a>
+                           
+                         </div>
+                         
+                      </div>
+                </td>
+                <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                  <p> <b>Degree: </b> B.E</p>
+                 <p> <b>Branch: </b></p>
+                 <p><b>Batch: </b>2010</p>
+                </td>
+              </tr> 
+                
+              <!-- 2008-->
+              <tr class="filterDiv 2008" >
+                <td style="width:60%">
+                    <div class="textbox-container">
+                         <img src="images/alumni/2008/2008-ajit.jpg" class="icon-box" alt=""> 
+                         <div class="details-box">
+                         <p><b>Name:</b>Ajit Choudhury </p>
+                         <p><b>Email-id:</b> mailajitchoudhury@gmail.com</p>
+                         <p><b>Contact No :</b> 9864403062</p>
+                         <p><b>Present Address: </b>Pathsala, ward no 01,  P. O. Pathsala, Barpeta, Assam</p>
+                         <p><b>Current Position/Job :</b></p>
+                         <a href="#" class="fa fa-linkedin" target="blank"></a>
+                           
+                         </div>
+                         
+                      </div>
+                </td>
+                <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                  <p> <b>Degree: </b> B.E</p>
+                 <p> <b>Branch: </b></p>
+                 <p><b>Batch: </b>2008</p>
+                </td>
+              </tr> 
+              <tr class="filterDiv 2008" >
+                <td style="width:60%">
+                    <div class="textbox-container">
+                         <img src="images/alumni/2008/2008-kaustav.jpg" class="icon-box" alt=""> 
+                         <div class="details-box">
+                         <p><b>Name:</b>Kaustav Mani Mahanta</p>
+                         <p><b>Email-id:</b>kaustav2@gmail.com</p>
+                         <p><b>Contact No :</b> 7896005881</p>
+                         <p><b>Present Address: </b>House No 12 Bir Lachit Path via Ajanta Path Survey Beltola Guwahati6</p>
+                         <p><b>Current Position/Job :</b>Assistant Engineer, Irrigation Department</p>
+                         <a href="#" class="fa fa-linkedin" target="blank"></a>
+                           
+                         </div>
+                         
+                      </div>
+                </td>
+                <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                  <p> <b>Degree: </b> B.E</p>
+                 <p> <b>Branch: </b></p>
+                 <p><b>Batch: </b>2008</p>
+                </td>
+              </tr> 
+
+                <!-- 2007-->
+                <tr class="filterDiv 2007" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2007/2007-sunjay.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Sunjay Raina</p>
+                           <p><b>Email-id:</b>skraina2011@gmail.com</p>
+                           <p><b>Contact No :</b> 9711109969</p>
+                           <p><b>Present Address: </b>8b , hydel appartments,  sector 46, faridabad , haryana- 121003 </p>
+                           <p><b>Current Position/Job :</b>Consultant ( Urban Infrastructure )</p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                             
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b></p>
+                   <p><b>Batch: </b>2007</p>
+                  </td>
+                </tr>
+                
+
+                <!-- 2004 -->
+                <tr class="filterDiv 2004" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/profile.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>PRANJAL NEOG</p>
+                           <p><b>Email-id:</b>n.pranjal1702@gmail.com</p>
+                           <p><b>Contact No :</b> 8638681341</p>
+                           <p><b>Present Address: </b>DX-120, OIL HOUSING COLONY, Duliajan </p>
+                           <p><b>Current Position/Job :</b>Service Sr. Manager, OIL</p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                             
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b></p>
+                   <p><b>Batch: </b>2004</p>
+                  </td>
+                </tr>
+                <tr class="filterDiv 2004" >
+                  <td style="width:60%">
+                      <div class="textbox-container">
+                           <img src="images/alumni/2004/2004-dwaipayan.jpg" class="icon-box" alt=""> 
+                           <div class="details-box">
+                           <p><b>Name:</b>Dwaipayan Chatterjee</p>
+                           <p><b>Email-id:</b>dwaipayanc@hotmail.com</p>
+                           <p><b>Contact No :</b> 9560683319</p>
+                           <p><b>Present Address: </b>Gurgaon, Haryana </p>
+                           <p><b>Current Position/Job :</b>Sr. Design Engineer-Electrical</p>
+                           <a href="#" class="fa fa-linkedin" target="blank"></a>
+                             
+                           </div>
+                           
+                        </div>
+                  </td>
+                  <td style="width:15%;padding-bottom: 5%;line-height: 1.3;">
+                    <p> <b>Degree: </b> B.E</p>
+                   <p> <b>Branch: </b></p>
+                   <p><b>Batch: </b>2004</p>
+                  </td>
+                </tr>
+
+
+             </table>
+
+              
+              <script>
+              function mySearch() {
+                var input, filter, table, tr, td, i, txtValue;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                table = document.getElementById("myTable");
+                tr = table.getElementsByTagName("tr");
+                for (i = 0; i < tr.length; i++) {
+                  td = tr[i].getElementsByTagName("td")[0];
+                  if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display = "";
+                    } else {
+                      tr[i].style.display = "none";
+                    }
+                  }       
+                }
+              }
+              </script>
+
+
+              </div>
+          </div>
+          <div id="tab2" class="tabcontent">
+            <h3>Group Photo Batch wise</h3>
+            <div class="text-content-slide">
+             
+              <p>will be updated soon</p>
+              <br>
+              </div>
+          </div>
+          
+          <div id="tab3" class="tabcontent">
+            <h3>Donations</h3>
+            <div class="text-content-slide">
+             
+              <p>will be updated soon</p>
+              </div>
+            </div>
+          
+          <script>
+          function opentab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+          
+          // Get the element with id="defaultTab" and click on it
+          document.getElementById("defaultTab").click();
+          </script>
+          <script>
+              
+            filterSelection("all")
+            function filterSelection(c) {
+              var x, i;
+              x = document.getElementsByClassName("filterDiv");
+              if (c == "all") c = "";
+              for (i = 0; i < x.length; i++) {
+                RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+              }
+            }
+            
+            function AddClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+              }
+            }
+            
+            function RemoveClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                }
+              }
+              element.className = arr1.join(" ");
+            }
+            
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("mybtncontainer");
+            var btns = btnContainer.getElementsByClassName("filter-btn");
+            for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName(" blink");
+                current[0].className = current[0].className.replace(" blink", "");
+                this.className += " blink";
+              });
+            }
+              </script>
+
+
+
+    
+
+      
+  
+      </div>
+     
+    
+    
+    </div>
+    
+      
+</div>
+    
+    
+<div class="footer">
+    
+<div class="row">
+  <div class="column left" style="background: rgb(2, 33, 51);">
+  
+    <img src="images/hostellogo.png" alt="" style="max-width: 20%;;min-width:200px;float:left" />
+   
+    <!-- weather widget start --><a target="_blank" href="https://www.booked.net/weather/guwahati-42869"><img src="https://w.bookcdn.com/weather/picture/13_42869_1_1_fff5d9_158_fff5d9_333333_08488D_0_fff5d9_333333_0_6.png?scode=124&domid=w209&anc_id=55825"  alt="booked.net"/></a><!-- weather widget end -->
+                 
+  </div>
+  <div class="column middle" style="background-color:rgb(2, 33, 51)">
+    <ul class="col2">
+      <li><strong>| Quick Links |</strong></li>
+      <li><a href="abouthostel.html">About Us</a></li>
+      <li><a href="p-boarders.html">Boarders List</a></li>
+      <li><a href="materials.html">Materials</a></li>
+      <li><a href="p-gallery.html">Photo Gallery</a></li>
+      <li><a href="v-gallery.html">Video Gallery</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+   
+  </div>
+  <div class="column rmid" style="background-color:rgb(2, 33, 51)">
+    <ul class="col2">
+      <li><strong>| External Links |</strong></li>
+      <li><a href="https://www.aec.ac.in/">AEC</a></li>
+      <li><a href="https://www.astu.ac.in/">ASTU</a></li>
+      <li><a href="https://dte.assam.gov.in/">DTE</a></li>
+      <li><a href="https://mhrd.gov.in/">MHRD</a></li>
+      <li><a href="https://swayam.gov.in/">SWAYAM</a></li>
+    </ul>
+  </div>
+  <div class="column right" style="background-color:rgb(2, 33, 51)">
+    <ul class="col2">
+      <li><strong>| Location |</strong></li>
+      <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.7974393879867!2d91.65767578012056!3d26.142921788413474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa84f5ac7eb14235a!2sAEC%20Hostel%202!5e0!3m2!1sen!2sin!4v1584198140658!5m2!1sen!2sin" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></li>
+      
+    </ul>
+    
+  </div>
+  <div class="column diff" style="background-color:rgb(2, 33, 51)">
+    <ul class="col2">
+      <li><strong>| Location |</strong></li>
+      <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.7974393879867!2d91.65767578012056!3d26.142921788413474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa84f5ac7eb14235a!2sAEC%20Hostel%202!5e0!3m2!1sen!2sin!4v1584198140658!5m2!1sen!2sin" width="210" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></li>
+      
+    </ul>
+    
+  </div>
+</div>
+
+</div>
+
+<div class="lastfooter">
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+<br>
+
+&copy; 2020 Hostel-2, Assam Engineering College. | Designed and Developed by
+</div>
+</body>
+</html>
